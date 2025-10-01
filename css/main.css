@@ -28,6 +28,7 @@
 
  --standard-font-size: 50px;
  --small-font-size: 25px;
+ --tiny-font-size: 15px;
 
 }
 
@@ -107,10 +108,18 @@ a:hover {
 .container {
     background-color: var(--color-surface1);
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     height: 100vh;
+    gap: 5rem;
+}
+
+.container p {
+    font-size: var(--tiny-font-size);
+    color: var(--color-subtext0);
+    text-align: left;
+    padding-top: 0.5rem;
 }
 
 .card {
