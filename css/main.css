@@ -1,5 +1,5 @@
 * {
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    cursor: default;
 }
 
 body, html {
@@ -41,7 +41,15 @@ a {
     color: white;
 }
 
+a:hover {
+    text-decoration: underline;
+}
+
 h1 {
     padding-bottom: 0;
     margin-bottom: 0.4rem;
+}
+
+.title {
+    font-family: "Comic Sans MS", cursive, sans-serif;
 }
