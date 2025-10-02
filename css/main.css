@@ -13,7 +13,7 @@ body {
 }
 
 .aboutimg {
-    width: 15%;
+    width: 15rem;
     image-rendering: pixelated;
     image-rendering: crisp-edges;
 }
