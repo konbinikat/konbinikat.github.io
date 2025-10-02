@@ -3,11 +3,11 @@
 }
 
 body, html {
-    height: 100%;
+    min-height: 100%;
 }
 
 body {
-    background: url("https://i8.glitter-graphics.org/pub/289/289158pqhy5cu5qb.jpg") no-repeat center center;
+    background: url("https://i1.glitter-graphics.org/pub/622/622111xgi1w5uxly.gif") no-repeat center center fixed;
     background-size: 100% 100%;
     color: white;
 }
