@@ -53,3 +53,7 @@ h1 {
 .title {
     font-family: "Comic Sans MS", cursive, sans-serif;
 }
+
+.nobullet {
+    list-style-type: none;
+}
