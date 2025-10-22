@@ -1,0 +1,104 @@
+* {
+    cursor: default;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+.top {
+    background-color: black;
+    display: flex;
+    height: 2rem;
+    align-items: center;
+    padding: 0.5rem;
+    padding-left: 1rem;
+    gap: 2rem;
+}
+
+.nav {
+    display: flex;
+    gap: 2rem;
+    border: 2px solid white;
+    padding: 0.25rem;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.pad {
+    padding: 1rem;
+    height: max-content;
+}
+
+.bg1 {
+    background-color: #101010;
+}
+
+.bg2 {
+    background-color: #202020;
+}
+
+.bg3 {
+    background-color: #303030;
+}
+
+.bg4 {
+    background-color: #404040;
+}
+
+.bg5 {
+    background-color: #505050;
+}
+
+button {
+    color: white;
+    background-color: transparent;
+    border: none;
+}
+
+button:hover {
+    font-weight: bolder;
+    font-style: italic;
+}
+
+.boldhover {
+    font-weight: bold;
+}
+
+.boldhover:hover {
+    font-weight: 900;
+    font-style: italic;
+}
+
+.title {
+    padding-top: 1rem;
+}
+
+ol {
+    padding-left: 2rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.75rem;
+}
+
+ul {
+    padding-top: 0.5rem;
+    padding-bottom: 0.75rem;
+    padding-left: 1rem;
+    list-style: none;
+}
+
+.blogbody {
+    padding-left: 1rem;
+}
+
+.blogimg {
+    width: 20rem;
+}

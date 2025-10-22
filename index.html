@@ -4,51 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>kat's konbini</title>
-    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="./css/new.css">
 </head>
 <body>
-    <h1 class="title">welcome!!!!</h1>
-    <div class="blinkies">
-        <img class="blinkie" src="http://sl.glitter-graphics.net/pub/471/471496nlxcfbuo0p.gif" alt="put a little love in your heart">
-        <img class="blinkie" src="http://sl.glitter-graphics.net/pub/149/149133gap1u3wwrm.gif" alt="the road to hell is paved with REPUBLICANS!">
-        <img class="blinkie" src="http://sl.glitter-graphics.net/pub/3768/3768062gly6mu7x7d.gif">
+    <div class="top">
+        <button onclick="loadPage('home.html')" class="boldhover">kat's konbini</button>
+        <button onclick="loadPage('music.html')">music awards</button>
+        <button onclick="loadPage('games.html')">game tier list</button>
+        <button onclick="loadPage('blog.html')">blog</button>
     </div>
-    <br>
-    <img class="aboutimg" src="http://sl.glitter-graphics.net/pub/1558/1558444onuibmblkw.gif">
-    <p>it is i konbini kat</p>
-    <p class="title">navigation for now</p>
-    <ol>
-        <li><a href="/musicawards.html">my music awards!!</a></li>
-    </ol>
-    <div class="textimg">
-        <p>i am 21 yeaes old and i like computers and musicand languages and uhhhh</p>
-        <img class="tiny" src="https://i4.glitter-graphics.org/pub/448/448934mz75gvaqb2.jpg">
-    </div>
-    <p class="title">my setup</p>
-    <ol>
-        <li>iphone se 2016 <img class="tiny" src="https://in.static.webuy.com/product_images/Phones/Phones%20iPhone/SAPPIPHSE64GSUNLB_l.jpg"></li>
-        <li>2015 macbook air (arch linux) <img class="tiny" src="https://lowendmac.com/wp-content/uploads/13-macbook-air-early-2014.jpg"></li>
-        <li>main rig with 7950x and 4090 (arch linux) <img class="tiny" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/NewTux.svg/853px-NewTux.svg.png"></li>
-        <li>lightly modded 3ds <img class="tiny" src="https://s1.thcdn.com/design-assets/products/10573280/largee.jpg"></li>
-        <li>some ipad idk <img class="tiny" src="https://upload.wikimedia.org/wikipedia/commons/1/1a/IPad_2_White_on_table.jpg"></li>
-        <li>steam deck <img class="tiny" src="https://sm.ign.com/ign_br/news/s/smach-zero/smach-zero-steam-based-handheld-price-and-pre-sale_ffea.jpg"></li>
-    </ol>
-    <p class="title">my links</p>
-    <ol>
-        <li><a href="https://bsky.app/profile/irisgarage.bsky.social">bsky</a></li>
-        <li><a href="https://spacehey.com/oldcarbattery">spacehey</a></li>
-        <li><a href="https://www.albumoftheyear.org/user/dotlua/">aoty</a></li>
-        <li><a href="https://github.com/konbinikat/konbinikat.github.io">this repo</a></li>
-    </ol>
-    <p class="title">some labels you might wanna know i guess</p>
-    <ol>
-        <li>asexual</li>
-        <li>autistic</li>
-        <li>adhd</li>
-        <li>aphantasic</li>
-        <li>NON BINANNERYRY</li>
-        <li>she/they</li>
-    </ol>
-    
+
+    <div id="content"></div>
+
+    <script>
+        async function loadPage(page) {
+        const res = await fetch(page);
+        const html = await res.text();
+        document.getElementById('content').innerHTML = html;
+        history.pushState({ page }, '', '#' + page);
+        }
+
+        window.addEventListener('popstate', e => {
+        if (e.state?.page) loadPage(e.state.page);
+        });
+
+        // Load default or restored page
+        const initial = location.hash ? location.hash.substring(1) : 'home.html';
+        loadPage(initial);
+    </script>
 </body>
 </html>
