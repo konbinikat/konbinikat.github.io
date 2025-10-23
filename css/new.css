@@ -15,16 +15,12 @@ body {
     display: flex;
     height: 2rem;
     align-items: center;
+    justify-content: space-evenly;
     padding: 0.5rem;
     padding-left: 1rem;
-    gap: 2rem;
-}
-
-.nav {
-    display: flex;
-    gap: 2rem;
-    border: 2px solid white;
-    padding: 0.25rem;
+    padding-right: 1rem;
+    max-width: 25rem;
+    gap: 1rem;
 }
 
 a {
@@ -68,6 +64,7 @@ button:hover {
 
 .title {
     padding-top: 1rem;
+    text-shadow: #ffffffaa 0px 0px 5px;
 }
 
 ol {
@@ -85,6 +82,13 @@ ul {
 
 .blogbody {
     padding-left: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: #ffffff50 solid 1px;
+}
+
+.blogtitle {
+    font-weight: bolder;
+    margin-left: -0.5rem;
 }
 
 .blogimg {
