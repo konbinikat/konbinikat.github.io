@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>kat's konbini</title>
     <link rel="stylesheet" href="./css/new.css">
+    <link rel="icon" type="image/jpg" href="/img/icon.jpg">
 </head>
 <body>
     <div class="top">
+        <img src="img/icon.jpg" class="navimg" onclick="loadPage('home.html')">
         <button onclick="loadPage('home.html')" class="boldhover">kat's konbini</button>
         <button onclick="loadPage('music.html')">music awards</button>
         <button onclick="loadPage('games.html')">game tier list</button>
@@ -28,7 +30,6 @@
         if (e.state?.page) loadPage(e.state.page);
         });
 
-        // Load default or restored page
         const initial = location.hash ? location.hash.substring(1) : 'home.html';
         loadPage(initial);
     </script>
