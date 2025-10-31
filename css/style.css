@@ -58,6 +58,10 @@ a {
     margin: 0rem;
 }
 
+a:hover {
+    font-weight: bolder;
+}
+
 .box {
     height: auto;
     width: auto;
@@ -81,4 +85,9 @@ a {
 
 .you {
     font-size: larger;
+}
+
+p {
+    padding: 0;
+    margin: 0.1rem;
 }
