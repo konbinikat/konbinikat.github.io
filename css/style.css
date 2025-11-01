@@ -22,6 +22,7 @@ body {
 
 h2 {
     font-size: xx-large;
+    font-weight: bolder;
 }
 
 .main {
@@ -35,7 +36,7 @@ h2 {
     justify-content: center;
     flex-direction: column;
     flex-basis: auto;
-    /*background-color: aqua;*/
+    background-color: white;
     border: 5px solid black;
     border-radius: 1rem;
 }
@@ -75,7 +76,7 @@ a:hover {
     position:absolute;
     left: 25px;
     bottom: 25px;
-
+    z-index: -1;
 }
 
 .youimg {
@@ -90,4 +91,19 @@ a:hover {
 p {
     padding: 0;
     margin: 0.1rem;
+}
+
+.blogblock p {
+    margin: 0;
+    padding: 0;
+    text-justify: inter-word;
+    text-align: justify;
+}
+
+.blogblock {
+    gap: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
