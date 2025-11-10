@@ -44,6 +44,8 @@ h5 {
     background-color: white;
     border: 5px solid black;
     border-radius: 1rem;
+    overflow: scroll;
+    scrollbar-width: none;
 }
 
 .nav {
@@ -69,9 +71,8 @@ a:hover {
 }
 
 .box {
-    height: auto;
-    max-height: max-content;
-    width: auto;
+    height: max-content;
+    width: max-content;
     display: flex;
     flex-direction: column;
 }
@@ -112,4 +113,7 @@ p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 2rem;
 }
