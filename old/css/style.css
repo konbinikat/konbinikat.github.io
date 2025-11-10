@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+:root {
+    --text: #000;
+}
+
+* {
+    color: var(--text);
+    cursor: default;
+    width: 100%;
+    height: 100%;
+    font-family: "DM Sans", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+h2 {
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+h5 {
+    padding: 0;
+    margin: 0;
+}
+
+.main {
+    padding: 2rem;
+    width: 25rem;
+    height: 25rem;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 1rem;
+    background-color: white;
+    border: 5px solid black;
+    border-radius: 1rem;
+    overflow: scroll;
+    scrollbar-width: none;
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    gap: 0rem;
+    margin: 0;
+    padding: 0;
+    /*background-color: antiquewhite;*/
+    height: fit-content;
+}
+
+a {
+    font-size: larger;
+    text-decoration: none;
+    color: var(--text);
+    padding: 0rem;
+    margin: 0rem;
+}
+
+a:hover {
+    font-weight: bolder;
+}
+
+.box {
+    height: max-content;
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+}
+
+.corner {
+    width: auto;
+    height: 10rem;
+    position:absolute;
+    left: 25px;
+    bottom: 25px;
+    z-index: -1;
+}
+
+.youimg {
+    width: 20rem;
+    height: auto;
+}
+
+.you {
+    font-size: larger;
+}
+
+p {
+    padding: 0;
+    margin: 0.1rem;
+}
+
+.blogblock p {
+    margin: 0;
+    padding: 0;
+    text-justify: inter-word;
+    text-align: justify;
+}
+
+.blogblock {
+    gap: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 2rem;
+}
