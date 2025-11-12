@@ -59,3 +59,21 @@ a {
     transform: translateX(-50%);
     text-align: left;
 }
+
+.main {
+    padding: 1rem;
+    margin: 0;
+}
+
+.blogentry {
+    border: 1px solid;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin-bottom:2rem;
+    width: auto;
+}
+
+.blogentry p, .blogentry pre {
+    padding: 0;
+    margin: 0;
+}
