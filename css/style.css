@@ -6,6 +6,16 @@
     font-family: "DM Sans", sans-serif;
 }
 
+html, body {
+    height: 100%;
+}
+
+body {
+    min-height: 100vh;
+    padding-bottom: 1.5rem;
+    box-sizing: border-box;
+}
+
 a {
     text-decoration: none;
 }
@@ -127,4 +137,14 @@ td.art img {
 ol {
     padding: 0;
     padding-left: 1.5rem;
+}
+
+.splash {
+    position: fixed;
+    left: 1rem;
+    bottom: 1rem;
+    padding: 0;
+    margin: 0;
+    font-size: 0.85rem;
+    z-index: -5;
 }
