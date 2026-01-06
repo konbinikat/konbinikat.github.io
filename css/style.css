@@ -95,3 +95,7 @@ tr:nth-child(even) {
 .centre {
     text-align: center;
 }
+
+.tableimg {
+    width: 3.5rem;
+}
