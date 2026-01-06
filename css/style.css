@@ -65,8 +65,33 @@ a {
     margin: 0;
 }
 
-table, td, th {
+table {
     border: 1px double black ;
+    padding: 0rem;
+    gap: 0rem;
+}
+
+thead tr th {
+    color: white;
+    background-color: black;
+}
+
+tr:nth-child(odd) {
+    padding: 0rem;
+    margin: 0rem;
+    background-color: rgb(241, 240, 240);
+}
+
+tr:nth-child(even) {
+    padding: 0rem;
+    margin: 0rem;
+    background-color: rgb(219, 219, 219);
+}
+
+.pad td, .pad th {
     padding: 0.25rem;
-    gap: 0;
+}
+
+.centre {
+    text-align: center;
 }
