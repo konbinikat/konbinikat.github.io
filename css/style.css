@@ -72,13 +72,12 @@ a:hover, li:hover {
 table {
     border: 3px solid black;
     border-collapse: collapse;
-    z-index: 0;
 }
 
 td {
-    border: 2px solid rgb(255, 255, 255);
-    border-collapse: collapse;
-    z-index: -1;
+    border-style: solid;
+    border-width: 0px 2px;
+    border-color: white;
 }
 
 thead tr th {
