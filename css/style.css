@@ -111,7 +111,7 @@ tr:nth-child(even) {
     padding: 0.5rem;
 }
 
-.centre {
+td.centre {
     text-align: center;
 }
 
@@ -147,4 +147,9 @@ ol {
     margin: 0;
     font-size: 0.85rem;
     z-index: -5;
+}
+
+#moviesTable thead tr th:hover {
+    font-weight: bolder;
+    text-decoration: underline;
 }
