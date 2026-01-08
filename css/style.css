@@ -1,8 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 
+:root {
+    --colour: black;
+}
+
 * {
     cursor: default;
-    color: black;
+    color: var(--colour);
     font-family: "DM Sans", sans-serif;
 }
 
@@ -80,7 +84,7 @@ a:hover, li:hover {
 }
 
 table {
-    border: 3px solid black;
+    border: 3px solid var(--colour);
     border-collapse: collapse;
 }
 
@@ -92,7 +96,7 @@ td {
 
 thead tr th {
     color: white;
-    background-color: black;
+    background-color: var(--colour);
 }
 
 tr:nth-child(odd) {
@@ -152,4 +156,21 @@ ol {
 #moviesTable thead tr th:hover {
     font-weight: bolder;
     text-decoration: underline;
+}
+
+.autoNumber tbody {
+    counter-reset: row;
+}
+
+.autoNumber tbody tr {
+    counter-increment: row;
+}
+
+.autoNumber tbody td:first-child::before {
+  content: counter(row);
+  font-weight: bolder;
+}
+
+.autoNumber tbody td:first-child {
+    text-align: center;
 }
