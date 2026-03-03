@@ -174,3 +174,29 @@ ol {
 .autoNumber tbody td:first-child {
     text-align: center;
 }
+
+.toppy {
+    position: absolute;
+    top: 0;
+    gap: 0.1rem;
+    margin: 0;
+    padding-top: 1rem;
+    justify-content: center;
+    justify-items: center;
+    display: block;
+}
+
+.toppy a {
+    font-weight: medium;
+}
+
+.toppy a:hover {
+    font-weight: bolder;
+}
+
+.toppy p {
+    justify-content: center;
+    justify-items: center;
+    margin: 0;
+    padding-bottom: 0.5rem;
+}
