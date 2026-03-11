@@ -200,3 +200,18 @@ ol {
     margin: 0;
     padding-bottom: 0.5rem;
 }
+
+.album{
+    display:block;
+    font-weight:bold;
+}
+
+.artist{
+    display:block;
+    font-size:0.9em;
+    opacity:0.8;
+}
+
+.bold {
+    font-weight: bold;
+}
