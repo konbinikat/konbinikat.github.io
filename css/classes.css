@@ -1,0 +1,70 @@
+@import "root.css";
+
+.headerRight {
+    display: flex;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    gap: 0.5rem;
+}
+
+.headerLeft {
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    text-align: center;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.headerImage {
+    width: 2rem;
+}
+
+.noiseLayer {
+    width: 100%;
+    object-fit: fill;
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+
+.newestPost, .oldPost {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--main);
+    padding-top: 1rem;
+    font-family: "Lora";
+}
+
+.oldPost {
+    font-size: 1.2rem;
+}
+
+.newestPost:before, .newestPost:after, .oldPost:before, .oldPost:after {
+    content: var(--symbol);
+}
+
+.isoDate {
+    font-family: "Lora";
+    font-size: 1rem;
+    font-weight: bolder;
+    position: relative;
+}
+
+.isoDate:hover::after {
+    content: attr(data-localized-date);
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--main);
+    color: var(--headertext);
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.8em;
+    white-space: nowrap;
+    margin-bottom: 5px;
+    z-index: 10;
+}

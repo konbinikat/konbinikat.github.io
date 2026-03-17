@@ -1,0 +1,78 @@
+@import "root.css";
+
+* {
+    font-family: "Lora", serif;
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: var(--text);
+    padding: 0;
+    margin: 0;
+    cursor: default;
+}
+
+p, pre {
+    font-family: "Goudy Bookletter 1911";
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+body {
+    background-color: var(--gsf-e);
+}
+
+main {
+    padding: 1rem;
+}
+
+h1, h2, h3, h4 {
+    font-weight: 700;
+    color: var(--main);
+    padding-top: 1rem;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.7rem;
+}
+
+h3 {
+    font-size: 1.4rem;
+}
+
+h4 {
+    font-size: 1.2rem;
+}
+
+h1:before, h1:after, h2:before, h2:after, h3:before, h3:after, h4:before, h4:after{
+    content: var(--symbol);
+}
+
+header {
+    padding: 1rem;
+    background-color: var(--main);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header * {
+    color: var(--headertext);
+}
+
+ul {
+    padding-left: 1.5rem;
+}
+
+li {
+    list-style-type: lower-greek;
+    font-family: "Goudy Bookletter 1911", "Eczar";
+}

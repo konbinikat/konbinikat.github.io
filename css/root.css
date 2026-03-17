@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Eczar:wght@400..800&display=swap');
+
+:root {
+
+    --gsf-a: #ccd5ae;
+    --gsf-b: #e9edc9;
+    --gsf-c: #fefae0;
+    --gsf-d: #faedcd;
+    --gsf-e: #d4a373;
+
+    --main: #242521;
+    --headertext: #ffffff;
+    --text: #242521;
+
+    --symbol: "~";
+
+}
