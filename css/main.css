@@ -62,6 +62,10 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 header * {

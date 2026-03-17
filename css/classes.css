@@ -6,6 +6,23 @@
     align-self: center;
     align-content: center;
     gap: 0.5rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.headerRight a {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: inline-block;
+}
+
+.headerLeft a {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: inline-block;
 }
 
 .headerLeft {
@@ -15,10 +32,14 @@
     text-align: center;
     display: flex;
     gap: 0.5rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 .headerImage {
-    width: 2rem;
+    height: 2rem;
+    width: auto;
 }
 
 .noiseLayer {
